@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Johnsen">
+    <title>微专业WEB前端开发作业</title>
+    <link rel="icon" href="163.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/weizhuanye.js"></script>	
+	<link rel="stylesheet" href="css/163-main.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+
+</head>
+<body>
+ 
+<!-- 头部 --> 
+<div class="g-header">
+    <!-- 消息通知 -->
+	<div class="m-top"  id="topMessage">
+		<div class="m-width">
+			<p class="m-header-p1">网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！  <a href="">立即查看></a></p>
+			<p class="m-header-p2"><a id="no_command"><img src="images/close.png"></a>不再提醒</p>
+		</div>
+	</div>
+	<div class="m-header">
+	</div>
+	<!-- 导航 -->
+    <div class="m-width">
+		<div class="m-left">
+			<img src="images/logo.png">
+			<div id="login"> + 关注</div>
+			<div id="afterlogin" style="display:none;"><span></span>已关注 | <a>取消</a></div>
+			<span>粉丝  45</span>
+		</div>
+		<div class="m-right">
+			<ul>
+			    <li><a href=""><img src="images/search.png"></a></li>
+			    <li class="li-1"><a href="http://www.icourse163.org/">中国大学MOOC</a></li>
+				<li class="li-1"><a href="http://study.163.com/">云课堂</a></li>
+				<li class="li-1"><a href="http://open.163.com/">网易公开课</a></li>
+			</ul>
+		</div>
+    </div>
+</div>
+
+<!-- banner图区域 -->
+<div class="g-banner">
+	<div class="m-wrap">
+	   <div class="slide" id="slider">
+          <a href="http://open.163.com/" style="opacity: 1;"><img src="images/banner1.jpg"></a>
+          <a href="http://study.163.com/"><img src="images/banner2.jpg"></a>
+          <a href="http://www.icourse163.org/"><img src="images/banner3.jpg"></a>
+       <div class="pointer" id="point">
+          <i style="background: #333"></i><i></i><i></i>
+       </div>
+       
+    </div>
+</div>
+
+<!-- 课堂入口区 -->
+<div class="g-icon">
+	<div class="m-width">
+		<div class="i-class">
+			<div class="i-img">
+				<img src="images/icon-1.png">
+			</div>
+			<div class="i-word">
+				<h1>网易公开课</h1>
+				<p>推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+				<p class="i-p"><a href="">了解更多></a></p>
+			</div>
+		</div>
+		<div class="i-class">
+			<div class="i-img">
+				<img src="images/icon-2.png">
+			</div>
+			<div class="i-word">
+                <h1>云课堂</h1>
+				<p>网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+				<p class="i-p"><a href="">了解更多></a></p>
+			</div>
+		</div>
+		<div class="i-class">
+			<div class="i-img">
+				<img src="images/icon-3.png">
+			</div>
+			<div class="i-word">
+				<h1>中国大学MOOC</h1>
+				<p>是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+				<p class="i-p"><a href="">了解更多></a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 办公图片区 -->
+<div class="g-bangon">
+	<ul class="m-picture">
+		<li><img src="images/办公-1.jpg"></li>
+		<li><img src="images/办公-2.jpg"></li>
+		<li><img src="images/办公-3.jpg"></li>
+		<li><img src="images/办公-4.jpg"></li>
+		<li><img src="images/办公-5.jpg"></li>
+	</ul>
+</div>
+
+<!-- 课程内容区 -->
+<div class="g-content">
+	<div class="m-width">
+		<div class="left">
+			<div class="i-head">
+				<a ><div class="head-1" id="productDesign" style="background:#39a030;">产品设计</div></a>
+				<a ><div class="head-2" id="codeLang" style="background:#fff;">编程语言</div></a>
+			</div>
+			<div class="i-content" id="okdklkd">
+                <!-- 产品设计模板 -->
+			    <!-- <div class="s-content">
+			    	<img src="images/内容-1.jpg">
+			    	<h2>混音全揭秘 舞曲实战篇 揭秘音乐揭秘音乐音乐</h2>
+			    	<p>音频帮</p>
+			    	<div class="howmanyPeople">
+						<img src="images/people.png">
+						<p>555</p>
+			        </div>
+			    	<p class="money">￥800.00</p>
+ -->
+			       <!--  hover 样式展现 -->
+			    	<!-- <div class="hoverdesign">
+			    		<img src="images/内容-1.jpg">
+			    		<div class="manu">
+			    			<h1>手绘画系列教材</h1>
+			    			<div class="hover_div_top">
+			    			   <img src="images/people.png">
+			    			   <p>人在学</p>
+			    			</div>
+			    			<p>发布者：</p>
+			    			<p>分类：</p>
+			    		</div>
+			    		<div class="description">
+			    		    <h3>会计师的回复看见爱上对方空间还是空间发挥</h3>
+			    	    </div>
+			    	</div>-->
+			</div>
+             
+
+			<div class="i-content" id="biancheng">
+				
+			</div> 
+
+
+			<!-- 翻页模块 -->
+			<div class="scott" id="scott">
+                <span class="disabled" id="item_pre"> < </span>
+                <a href="#?page=2" class="yema-active">1</a>
+                <a href="#?page=2">2</a>
+                <a href="#?page=3">3</a>
+                <a href="#?page=4">4</a>
+                <a href="#?page=5">5</a>
+                <a href="#?page=6">6</a>
+                <a href="#?page=7">7</a>
+                <a href="#?page=8">8</a>
+                <span class="disabled" id="item_next"> > </span>
+            </div>
+		</div>
+		<div class="right">
+			<div class="right-head">
+			   <div>
+			    <div style="padding-left: 0;border-bottom: 1px solid #dddddd;">
+				   <h1>机构介绍</h1>
+				</div>
+				<p>观看下面的视频来了解吧：</p>
+				<a id="getVideo"><img src="images/视频.jpg"></a>
+			   </div>
+			<div class="right-content">
+				<h1>最热排行</h1>
+				<ul id="right_class">
+				<!-- 右侧最热课程模板 -->
+					<!-- <li>
+						<img class="right-img" src="images/最热排行.jpg">
+						<div class="jieshao">
+							<p>舞曲揭秘音乐揭秘舞曲揭秘音乐揭秘</p>
+							<div>
+							   <img src="images/people.png">
+							   <p>55555</p>
+							</div>
+						</div>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 尾部 -->
+<div class="footer">
+	<div class="m-width">
+		<div class="m-footer">
+			<img src="images/footer.png">
+			<p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+            <p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+		</div>
+		<div class="r-footer">
+			<ul>
+				<li>友情链接：</li>
+				<li><a href="">网易公开课</a></li>
+				<li><a href="">网易云课堂</a></li>
+				<li><a href="">中国大学MOOC</a></li>
+			</ul>
+			<ul>
+				<li>我们：</li>
+				<li><a href="">关于</a></li>
+				<li><a href="">联系</a></li>
+				<li><a href="">关注<span></span></a></li>
+			</ul>
+			<ul>
+				<li>更多：</li>
+				<li><a href="">常见问题</a></li>
+				<li><a href="">意见反馈</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/slider_and_yema.js"></script>
+
+
+</body>
+</html>
